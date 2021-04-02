@@ -19,17 +19,25 @@ describe Dice do
 
   end
 
-
   it { is_expected.to respond_to :roll }
-
-  it 'should return a number between 1 and 6 when rolled' do
-    number = 3
-    expect(1..6).to cover(subject.roll(number))
-  end
 
   it 'can return more than one die' do
     expect(subject).to respond_to(:roll).with(1).argument 
   end
 
+  it 'should return a number between 1 and 6 when rolling default dice' do
+    roll = subject.roll(100)
+    actual = roll.minmax
+    expected = [1, 6]
+    expect(actual).to eq(expected)
+  end
+
+  it 'should return a number between 1 and n when rolling dice with n sides' do
+    dice = Dice.new(9)
+    roll = dice.roll(100)
+    actual = roll.minmax
+    expected = [1, 9]
+    expect(actual).to eq(expected)
+  end
 
 end

@@ -2,12 +2,16 @@ class Dice
 
   attr_reader :sides
 
-  def initialize(sides=6)
+  def initialize(sides = 6)
     @sides = sides
   end
 
   def roll(number)
-    rand(1..6)
+    results = Array.new
+    number.times do 
+      results << rand(1..@sides)
+    end
+    results
   end
 
 end
