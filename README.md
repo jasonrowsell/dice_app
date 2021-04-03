@@ -1,6 +1,6 @@
 # Dice App
 
-[![Build Status](https://travis-ci.com/jasonrowsell/dice_app.svg?branch=main)](https://travis-ci.com/jasonrowsell/dice_app)
+[![Build Status](https://travis-ci.com/jasonrowsell/dice_app.svg?branch=main)](https://travis-ci.com/jasonrowsell/dice_app)[![Coverage Status](https://coveralls.io/repos/github/jasonrowsell/dice_app/badge.svg)](https://coveralls.io/github/jasonrowsell/dice_app)
 
 A dice-based app for games, built using Ruby and RSpec.
 This app is designed to meet the requirements of these [user stories.](./user_stories.md)
