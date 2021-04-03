@@ -15,7 +15,9 @@ This app is designed to meet the requirements of these [user stories.](./user_st
 
 ## Dependencies
 
-- `rspec`
+- `rspec` - testing
+- `coveralls` - test coverage
+- `rake` - CI
 
 ## Getting started
 
@@ -37,9 +39,3 @@ Run tests using RSpec:
 
 - `rspec`
 - `rspec -fd` - for documentation format of tests
-
-## Dependencies
-
-- `rspec` - testing
-- `coveralls` - test coverage
-- `rake` - CI
