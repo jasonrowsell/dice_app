@@ -2,7 +2,7 @@
 
 A dice-based app for games, built using Ruby and RSpec.
 
-This app is designed to meet the requirements of these [user stories](./user_stories.md)
+This app is designed to meet the requirements of these [user stories.](./user_stories.md)
 
 ## Technical skills
 
