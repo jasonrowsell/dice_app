@@ -1,7 +1,8 @@
 # Dice App
 
-A dice-based app for games, built using Ruby and RSpec.
+[![Build Status](https://travis-ci.com/jasonrowsell/dice_app.svg?branch=main)](https://travis-ci.com/jasonrowsell/dice_app)
 
+A dice-based app for games, built using Ruby and RSpec.
 This app is designed to meet the requirements of these [user stories.](./user_stories.md)
 
 ## Technical skills
@@ -17,20 +18,27 @@ This app is designed to meet the requirements of these [user stories.](./user_st
 
 ## Getting started
 
-### Clone
+- Clone this repo
 
 ```shell
 git clone git@github.com:jasonrowsell/dice-app
 ```
 
-### Install dependencies
-
-```shell
-bundle
-```
-
-### Run dice-app script in irb
+Run dice.rb script in a REPL environment from root directory
 
 ```shell
 irb -r ./lib/dice.rb
 ```
+
+## Testing
+
+Run tests using RSpec:
+
+- `rspec`
+- `rspec -fd` - for documentation format of tests
+
+## Dependencies
+
+- `rspec` - testing
+- `coveralls` - test coverage
+- `rake` - CI
